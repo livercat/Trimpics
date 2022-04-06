@@ -15,3 +15,12 @@ Tested exclusively on Firefox 98+ and Kubuntu 21.
 On the other hand, it's pure CSS, so should work with any browser and any other Trimps userscripts (I personally use AutoTrimps with Trimpictionary).
 
 Anyway, if you find a bug, please file an issue, I'll look into it.
+
+# Screenshots
+Take care if you're under z100, there are slight spoilers (but icons only, no text)
+
+Buildings: https://github.com/livercat/Trimpictionary/raw/main/buildings.png
+
+Jobs: https://github.com/livercat/Trimpictionary/raw/main/jobs.png
+
+Equipment: https://github.com/livercat/Trimpictionary/raw/main/jobs.png
