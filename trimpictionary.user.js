@@ -2,6 +2,8 @@
 // @name         Trimpictionary
 // @version      0.1
 // @namespace    https://github.com/livercat/Trimpictionary
+// @downloadURL  https://github-cdn.vercel.app/livercat/Trimpictionary/trimpictionary.user.js
+// @updateURL    https://github-cdn.vercel.app/livercat/Trimpictionary/trimpictionary.user.js
 // @description  Pictographic and more compact UI for the game Trimps
 // @author       livercat
 // @match        *trimps.github.io*
