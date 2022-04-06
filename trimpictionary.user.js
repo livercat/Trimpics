@@ -13,16 +13,19 @@
 
 'use strict';
 
-function attachStyleToDocument(css) {
+function getTrimpictionaryStyle() {
    const head = document.getElementsByTagName('head')[0];
    if (!head) {
-       return;
+       return false;
    }
-   const style = document.createElement('style', {
-       type: 'text/css',
-       innerHTML: css
-   });
+   if (document.getElementById('trimpictionary')) {
+       return false;
+   }
+   const style = document.createElement('style');
+   style.id = 'trimpictionary';
+   style.type = 'text/css';
    head.appendChild(style);
+   return style;
 }
 
 function compileStyles() {
@@ -163,8 +166,11 @@ function compileStyles() {
 }
 
 function main() {
-    const styles = compileStyles();
-    attachStyleToDocument(styles.join('\n'));
+    const styleElement = getTrimpictionaryStyle();
+    if (styleElement) {
+        const styles = compileStyles();
+        styleElement.innerHTML = styles.join('\n');
+    }
 }
 
 main();
