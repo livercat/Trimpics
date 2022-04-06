@@ -7,7 +7,7 @@ I'm playing trimps on a 15-inch laptop, on Linux. This c͕̼̝u̫̱̙r͉͉̪̜̫
 Moreover, I'm fond of various icons in this game, so I've added *even more* icons for Buildings, Jobs, and Equipment.
 
 # How to install
-Get [Tampermonkey](https://www.tampermonkey.net/), install the [userscript](https://github.com/livercat/Trimpictionary/blob/main/trimpictionary.user.js).
+Get [Tampermonkey](https://www.tampermonkey.net/), install the [userscript](https://github.com/livercat/Trimpictionary/raw/main/trimpictionary.user.js).
 
 # Compatibility
 Tested exclusively on Firefox 98+ and Kubuntu 21.
