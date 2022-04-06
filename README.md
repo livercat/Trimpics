@@ -23,4 +23,4 @@ Buildings: https://github.com/livercat/Trimpictionary/raw/main/buildings.png
 
 Jobs: https://github.com/livercat/Trimpictionary/raw/main/jobs.png
 
-Equipment: https://github.com/livercat/Trimpictionary/raw/main/jobs.png
+Equipment: https://github.com/livercat/Trimpictionary/raw/main/equipmment.png
