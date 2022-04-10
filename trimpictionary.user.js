@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Trimpictionary
-// @version      0.1
+// @version      0.2
 // @namespace    https://github.com/livercat/Trimpictionary
 // @downloadURL  https://github-cdn.vercel.app/livercat/Trimpictionary/trimpictionary.user.js
 // @updateURL    https://github-cdn.vercel.app/livercat/Trimpictionary/trimpictionary.user.js
@@ -36,20 +36,21 @@ function compileStyles() {
                 `src: url(${fontUrl}) format("woff"); ` +
                 'font-weight: normal; font-style: normal; }');
 
-    // reduce font size on most buttons
-    styles.push('.fightBtn { padding-top: 0.05vw !important; }');
-    styles.push('.workBtn { padding-top: 0.2vw !important; }');
-    styles.push('.workBtn, .fightBtn, #autoMapLabel, .tabSelected a, .tabNotSelected a, #battleSideTitle, #autoMapStatus { font-size: 0.8vw !important; }');
+    // reduce font size on most buttons, fix its alignment
+    styles.push('.fightBtn:not(#mapsBtn) { padding-top: 0.3em !important; }');
+    styles.push('.workBtn { padding-top: 0.3em !important; }');
+    styles.push('.workBtn, .fightBtn, #autoMapLabel, .tabSelected a, .tabNotSelected a, #battleSideTitle, #autoMapStatus { font-size: 0.8em !important; }');
+    styles.push('#mapsBtnText { margin-top: -0.01em !important; }');
 
     // make alerts scale with their text size, not tab space
-    styles.push('#voidAlert { top: -2px !important; padding: 0.3em 0.55em 0.1em 0.55em !important; }');
+    styles.push('#voidAlert { top: 0 !important; padding: 0.3em 0.55em 0.1em 0.55em !important; }');
     styles.push('#talentsAlert { padding: 0.4em 0.7em 0.1em 0.7em !important; min-width: 1em !important; margin-right: 0.2em !important; }');
 
     // reduce map title font size
     styles.push('.titleDiv { font-size: 1.1em !important; padding: 0.1em 0 0.1em 0 !important}');
 
     // reduce font size for breeding info & trapping bar
-    styles.push('#empHide, #unempHide { font-size: 1vw !important; }');
+    styles.push('#empHide, #unempHide { font-size: 0.8em !important; }');
     styles.push('#trappingBar { line-height: 1em; }');
     styles.push('#trappingProgress { margin: 0.1em; }');
 
@@ -57,10 +58,11 @@ function compileStyles() {
     styles.push('#hiderStatus { font-size: 0.6vw !important; }');
     styles.push('#hiderStatus br { display: none !important; }');
 
-    // fix weird gaps between map cells
+    // fix weird gaps between map cells in FF
     styles.push('#grid, #mapGrid { overflow: hidden; }');
-    styles.push('.battleRow { margin-bottom: -0.55em; }');
-    styles.push('.battleCell { height: 2.3em; overflow: hidden; padding-top: 0.8vh !important; }');
+    styles.push('@-moz-document url-prefix() { .battleRow { margin-bottom: -0.5vw; } }');
+    styles.push('@-moz-document url-prefix() { .battleCell { height: 2vw; overflow: hidden; padding-top: 0.5vw !important; padding-bottom: 0 !important; } }');
+    styles.push('.battleCell { font-size: 0.9vw !important; padding-top: 0.4vw !important; padding-bottom: 0 !important; height: 2vw; }');
 
     // replace text with icons on some buttons
     const iconProps = 'font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; ' +
