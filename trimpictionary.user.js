@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Trimpictionary
-// @version      0.2
+// @version      0.3
 // @namespace    https://github.com/livercat/Trimpictionary
 // @downloadURL  https://github-cdn.vercel.app/livercat/Trimpictionary/trimpictionary.user.js
 // @updateURL    https://github-cdn.vercel.app/livercat/Trimpictionary/trimpictionary.user.js
@@ -82,7 +82,7 @@ function compileStyles() {
         'Hotel': {icomoon: 'e784'},
         'Resort': {rpg: 'ea56'},
         'Gateway': {icomoon: 'e894'},
-        'Wormhole': {rpg: 'ea6d'},
+        'Wormhole': {rpg: 'eaa2'},
         'Collector': {icomoon: 'e8da'},
         'Warpstation': {icomoon: 'e8d9'},
         'Gym': {rpg: 'ea48'},
@@ -94,11 +94,12 @@ function compileStyles() {
         'Farmer': {glyphicon: 'f8ff'},
         'Lumberjack': {glyphicon: 'e200'},
         'Miner': {icomoon: 'f1b3'},
-        'Scientist': {icomoon: 'e82b'},
+        'Scientist': {rpg: 'e93a'},
         'Trainer': {icomoon: 'e70f'},
         'Explorer': {icomoon: 'e806'},
         'Geneticist': {icomoon: 'e819'},
         'Magmamancer': {glyphicon: 'e104'},
+        'Amalgamator': {rpg: 'e99b'},
     };
 
     const equipment = {
@@ -108,12 +109,12 @@ function compileStyles() {
         'Mace': {rpg: 'ea1d'},
         'Helmet': {rpg: 'e9fe'},
         'Polearm': {rpg: 'eaac'},
-        'Pants': {rpg: 'e944'},
+        'Pants': {rpg: 'ea06'},
         'Battleaxe': {rpg: 'e917'},
         'Shoulderguards': {rpg: 'e9a1'},
         'Greatsword': {rpg: 'ea7e'},
         'Breastplate': {rpg: 'eae0'},
-        'Arbalest': {rpg: 'eac3'},
+        'Arbalest': {rpg: 'e962'},
         'Gambeson': {rpg: 'e90f'},
     };
 
