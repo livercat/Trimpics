@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Trimpictionary
+// @name         Trimpics
 // @version      0.3
-// @namespace    https://github.com/livercat/Trimpictionary
-// @downloadURL  https://github-cdn.vercel.app/livercat/Trimpictionary/trimpictionary.user.js
-// @updateURL    https://github-cdn.vercel.app/livercat/Trimpictionary/trimpictionary.user.js
+// @namespace    https://github.com/livercat/Trimpics
+// @downloadURL  https://github-cdn.vercel.app/livercat/Trimpics/trimpics.user.js
+// @updateURL    https://github-cdn.vercel.app/livercat/Trimpics/trimpics.user.js
 // @description  Pictographic and more compact UI for the game Trimps
 // @author       livercat
 // @match        *trimps.github.io*
@@ -13,16 +13,16 @@
 
 'use strict';
 
-function getTrimpictionaryStyle() {
+function getTrimpicsStyle() {
    const head = document.getElementsByTagName('head')[0];
    if (!head) {
        return false;
    }
-   if (document.getElementById('trimpictionary')) {
+   if (document.getElementById('Trimpics')) {
        return false;
    }
    const style = document.createElement('style');
-   style.id = 'trimpictionary';
+   style.id = 'Trimpics';
    style.type = 'text/css';
    head.appendChild(style);
    return style;
@@ -169,7 +169,7 @@ function compileStyles() {
 }
 
 function main() {
-    const styleElement = getTrimpictionaryStyle();
+    const styleElement = getTrimpicsStyle();
     if (styleElement) {
         const styles = compileStyles();
         styleElement.innerHTML = styles.join('\n');
